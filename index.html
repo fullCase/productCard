@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        body{
+            display: flex;
+            height: 100vh;
+            background: whitesmoke;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .wrapper{
+            padding: 20px;
+            display: flex;
+            width: 900px;
+            height: 750px;
+            align-items: center;
+            justify-content: center;
+            border: 15px double grey;
+            border-radius: 10px;
+        }
+
+        .card{
+            width: 400px;
+            height: 100%;
+            border-radius: 20px;
+            box-sizing: border-box;
+            text-align: center;
+            cursor: pointer;
+            box-shadow: 0 14px 28px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.22);
+        }
+
+        .card_title, .card_description_of_goods, .card_price, .card_star, .card_buy, .card_buy__button{
+            width: 100%;
+        }
+
+        .card-img__img{
+            margin: 0 auto;
+            width: 240px;
+            height: 310px;
+            transform: scale(1);
+        }
+
+        .card_title__h3{
+            padding-top: 25px;
+            font-size: 45px;
+            font-weight: bolder;
+            text-align: center;
+        }
+
+        .card_description_of_goods__p{
+            padding: 0 10px;
+            font-size: 25px;
+            text-align: center;
+            color: #9ba7ac;
+        }
+
+    </style>
+</head>
+<body>
+    <div class = "wrapper">
+        <div class = "card">
+            <div class = "card-img">
+                <img class = "card-img__img" src = "../card/watch.png" alt="">
+            </div>
+            <div class = "card_title">
+                <h3 class = "card_title__h3">Watch Premium+</h3>
+            </div>
+            <div class = "card_description_of_goods">
+                <p class = "card_description_of_goods__p">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus alias blanditiis eligendi laboriosam!
+                </p>
+            </div>
+            <div class = "card_price">
+                <p class = "card_price__p">
+                    $1100.00
+                </p>
+            </div>
+            <div class = "card_ star"></div>    
+            <div class = "card_buy">
+                <button class = "card_buy__button">buy now</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
